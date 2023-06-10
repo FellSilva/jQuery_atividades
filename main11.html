@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><button>animar</button></p>
+    <div class="primeiro"></div>
+    <div class="segundo"></div>
+
+
+    <script src="js/jquery-3.7.0.js"></script>
+    <script>
+        $("button").click(function () {
+            $("div.primeiro").slideUp(300).delay(1000).fadeIn(400);
+            $("div.segundo").slideUp(300).fadeIn(400);
+
+        });
+    </script>
+</body>
+
+</html>
